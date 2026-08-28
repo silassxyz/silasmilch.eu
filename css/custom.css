@@ -110,20 +110,6 @@ html.dark-mode .profile-dark-toggle {
   border-color: #707070;
 }
 
-.flex-item-stretch-6 {
-  flex: 1 auto;
-}
-
-.max-width-600 {
-  max-width: 900px;
-}
-
-@media screen and (min-width: 900px) {
-  .flex-item-stretch-6 {
-    flex: 5.5;
-  }
-}
-
 .menu .menu-items > a.menu-social-link {
   flex: 0 0 auto;
   padding: 6px;
