@@ -4,12 +4,12 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://silasmilch.eu/</loc>
+    <loc>https://www.silasmilch.eu/</loc>
     <lastmod>2025-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://silasmilch.eu/img/me.jpeg</image:loc> <!-- Dein Profilbild -->
+      <image:loc>https://www.silasmilch.eu/img/me.jpeg</image:loc> <!-- Dein Profilbild -->
       <image:caption>Profilbild von Silas Milch</image:caption>
       <image:title>Silas Milch</image:title>
     </image:image>
