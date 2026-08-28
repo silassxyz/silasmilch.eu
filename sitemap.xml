@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://silasmilch.eu/</loc>
+    <lastmod>2025-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://silasmilch.eu/img/me2.png</image:loc> <!-- Dein Profilbild -->
+      <image:caption>Profilbild von Silas Milch</image:caption>
+      <image:title>Silas Milch</image:title>
+    </image:image>
+  </url>
+
+  <!-- Projects Section -->
+  <url>
+    <loc>https://silasmilch.eu/#project</loc>
+    <lastmod>2025-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://silasmilch.eu/img/project-image.png</image:loc> <!-- Beispielbild für ein Projekt -->
+      <image:caption>Projektbild von Silas Milch</image:caption>
+      <image:title>Projekt Silas Milch</image:title>
+    </image:image>
+  </url>
+
+</urlset>

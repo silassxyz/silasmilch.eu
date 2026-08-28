@@ -1,0 +1,197 @@
+/*************************************************************************
+ * This css file is for your own style.
+ *************************************************************************/
+
+.content-table>div:first-child>div:first-child>h2:first-child {
+  margin-top: 0;
+}
+
+.profile-image-wrap {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  margin: 15px 0;
+}
+
+.profile-image-wrap #me {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.profile-image-wrap .profile-lang-toggle,
+.profile-image-wrap .profile-dark-toggle {
+  position: absolute;
+  bottom: 8px;
+  z-index: 1;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 11px;
+  line-height: 1.2;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.profile-lang-toggle {
+  right: 8px;
+}
+
+.profile-dark-toggle {
+  left: 8px;
+  min-width: 32px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+/* Dark mode */
+html.dark-mode,
+html.dark-mode body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3 {
+  color: #f2f2f2;
+}
+
+html.dark-mode hr {
+  background: #444444;
+}
+
+html.dark-mode .content p a,
+html.dark-mode .content ul a,
+html.dark-mode .content ol a {
+  color: #7eb8ff;
+}
+
+html.dark-mode .content p a:hover,
+html.dark-mode .content ul a:hover,
+html.dark-mode .content ol a:hover {
+  color: #a8d4ff;
+}
+
+html.dark-mode .menu-container {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+html.dark-mode .menu .menu-items .dropdown .dropdown-content {
+  background-color: #2a2a2a;
+  border-top-color: #555555;
+}
+
+html.dark-mode .menu .menu-items .dropdown .dropdown-content a {
+  color: #e0e0e0;
+}
+
+html.dark-mode .menu .menu-items .dropdown .dropdown-content a:hover {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+html.dark-mode input.custom-textbox,
+html.dark-mode textarea.custom-textbox {
+  background: #2a2a2a;
+  border-color: #555555;
+  color: #e0e0e0;
+}
+
+html.dark-mode .custom-button-flat {
+  background-color: #2a2a2a;
+  border-color: #666666;
+  color: #e0e0e0;
+}
+
+html.dark-mode .profile-dark-toggle {
+  background-color: #505050;
+  border-color: #707070;
+}
+
+.flex-item-stretch-6 {
+  flex: 1 auto;
+}
+
+.max-width-600 {
+  max-width: 900px;
+}
+
+@media screen and (min-width: 900px) {
+  .flex-item-stretch-6 {
+    flex: 5.5;
+  }
+}
+
+.menu .menu-items > a.menu-social-link {
+  flex: 0 0 auto;
+  padding: 6px;
+  opacity: 0.85;
+}
+
+.menu .menu-items > a.menu-social-link:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.menu .menu-items > a.menu-social-link svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.menu .menu-items > a.menu-social-link.menu-social-link-x .icon-x {
+  width: 20px;
+  height: 20px;
+  display: block;
+  filter: invert(1);
+  opacity: 0.85;
+}
+
+.menu .menu-items > a.menu-social-link.menu-social-link-x:hover .icon-x {
+  opacity: 1;
+}
+
+.site-copyright {
+  position: fixed;
+  right: 14px;
+  bottom: 12px;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: right;
+  max-width: min(300px, calc(100vw - 28px));
+  pointer-events: none;
+  user-select: none;
+}
+
+html:not(.dark-mode) .site-copyright {
+  color: rgba(90, 90, 90, 0.9);
+}
+
+@media screen and (max-width: 750px) {
+  .menu .menu-items.active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0 12px;
+  }
+
+  .menu .menu-items.active > a.menu-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border-top: none;
+    padding: 10px 14px;
+  }
+}
