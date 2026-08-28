@@ -181,3 +181,29 @@ html:not(.dark-mode) .site-copyright {
     padding: 10px 14px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .content-table {
+    padding: 24px 16px;
+  }
+
+  .flex-item {
+    margin: 0 10px;
+  }
+
+  .profile-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-header .profile-image-wrap {
+    width: 140px;
+    margin: 10px auto;
+  }
+
+  .site-copyright {
+    right: 10px;
+    bottom: 8px;
+    font-size: 10px;
+  }
+}
