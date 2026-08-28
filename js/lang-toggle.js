@@ -23,18 +23,20 @@
   blocks = blocks.filter(function (block) { return block.el; });
   if (!blocks.length) return;
 
-  var currentLang = 'en';
+  var currentLang = 'de';
 
-  toggleBtn.addEventListener('click', function () {
-    currentLang = currentLang === 'en' ? 'de' : 'en';
+  function render() {
     blocks.forEach(function (block) {
       block.el.textContent = block.texts[currentLang];
       block.el.setAttribute('data-lang', currentLang);
     });
     toggleBtn.textContent = currentLang === 'en' ? 'DE' : 'EN';
+  }
+
+  toggleBtn.addEventListener('click', function () {
+    currentLang = currentLang === 'en' ? 'de' : 'en';
+    render();
   });
 
-  window.addEventListener('load', () => {
-    document.getElementById('lang-toggle-about').click();
-});
+  render();
 })();
